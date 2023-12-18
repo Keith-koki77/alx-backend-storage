@@ -6,7 +6,7 @@ Python script that provides some stats about Nginx logs stored in MongoDB
 from pymongo import MongoClient
 
 
-def nginx_logs_stats(mongo_uri):
+def nginx_logs_stats('mongodb://127.0.0.1:27017'):
      """script that provides some stats about Nginx logs stored in MongoDB"""
     client = MongoClient('mongodb://127.0.0.1:27017')
     db = client.logs
