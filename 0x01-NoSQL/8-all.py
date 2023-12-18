@@ -5,5 +5,5 @@ List all documents in a MongoDB collection.
 
 
 def list_all(mongo_collection):
-    documents = list(mongo_collection.find())
-    return documents
+    """Lists all documents"""
+    return mongo_collection.find()
